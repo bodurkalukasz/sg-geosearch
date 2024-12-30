@@ -1,0 +1,660 @@
+body {
+  color: #565a5c;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.aisdemo--left-column {
+  height: 600px;
+}
+
+.aisdemo--right-column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.aisdemo-navbar {
+  border-bottom: 1px solid #dce0e0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.aisdemo-navbar .is-logo {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  left: 16px;
+}
+
+.aisdemo-navbar .logo {
+  color: #ff585b;
+  border-right: 1px solid #dce0e0;
+  padding: 14px 22px;
+  font-family: Courier;
+  font-size: 40px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.aisdemo-navbar .fa-search {
+  color: #dce0e0;
+  font-size: 30px;
+  position: absolute;
+  top: 17px;
+  left: 140px;
+}
+
+.aisdemo-navbar .ais-SearchBox {
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+
+.aisdemo-navbar .ais-SearchBox-form {
+  width: 300px;
+  height: 40px;
+  box-shadow: none;
+  border: 0;
+  position: absolute;
+  top: 15px;
+}
+
+.aisdemo-navbar .ais-SearchBox-input {
+  box-shadow: none;
+  border: 0;
+  position: absolute;
+}
+
+.aisdemo-navbar .ais-SearchBox-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.aisdemo-navbar .ais-SearchBox-reset {
+  fill: #bfc7d8;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  right: 13px;
+}
+
+.aisdemo-filters .aisdemo-filter {
+  border-bottom: 1px solid #dce0e0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.aisdemo-filters .aisdemo-filter-title {
+  padding-top: 9px;
+  padding-left: 30px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.aisdemo-filters .date, .aisdemo-filters #guests select {
+  border: 1px solid #dce0e0;
+  padding: 8px 10px;
+  font-size: .8em;
+}
+
+.aisdemo-filters #guests select {
+  appearance: none;
+  background: none;
+  border-radius: 0;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.aisdemo-filters #guests select:focus {
+  outline: none;
+}
+
+.aisdemo-filters .guests-caret:before {
+  content: "▼";
+  text-align: center;
+  pointer-events: none;
+  color: #82888a;
+  width: 2em;
+  padding-top: .8em;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-count {
+  display: none;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-item {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-item label {
+  box-sizing: border-box;
+  background: #edefed;
+  width: 100%;
+  padding: 9px 10px 7px;
+  font-size: .8em;
+  font-weight: normal;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-checkbox {
+  float: right;
+  vertical-align: top;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #dce0e0;
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 20px;
+  position: relative;
+  bottom: 3px;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-checkbox:focus {
+  outline: none;
+}
+
+.aisdemo-filters #room_types .ais-RefinementList-item--selected .ais-RefinementList-checkbox:before {
+  content: "✓";
+  text-align: center;
+  color: #ff5a5f;
+  width: 1.25em;
+  font-size: .85em;
+  position: absolute;
+}
+
+.aisdemo-filters #price .ais-RangeSlider-target {
+  margin: 30px 9px 18px;
+}
+
+.aisdemo-filters #price .ais-RangeSlider-handle {
+  border-color: #ff585b;
+}
+
+.aisdemo-filters #price .rheostat-progress {
+  background-color: #ff585b !important;
+}
+
+.aisdemo-filters #price .rheostat-tooltip {
+  font-size: .8em;
+}
+
+#stats {
+  padding: 5px 15px;
+  font-size: 1em;
+  font-weight: normal;
+  bottom: 0;
+}
+
+#map {
+  height: 850px;
+}
+
+.ais-GeoSearch, .ais-GeoSearch-map {
+  height: 100%;
+}
+
+.ais-GeoSearch-reset {
+  color: #fff;
+  background-color: #ff585b;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: .85em;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#results {
+  background: #edefed;
+  padding: 40px 20px;
+}
+
+.hit {
+  padding: 15px 0;
+}
+
+#hits .ais-Hits-list {
+  list-style: none;
+}
+
+#hits .ais-Hits-list .hit .pictures-wrapper {
+  position: relative;
+}
+
+#hits .ais-Hits-list .hit .pictures-wrapper .picture {
+  width: 100%;
+}
+
+#hits .ais-Hits-list .hit .pictures-wrapper .profile {
+  border: 4px solid #ffffff4d;
+  border-radius: 30px;
+  width: 60px;
+  position: absolute;
+  bottom: -16px;
+  right: 12px;
+}
+
+.picture {
+  max-width: 100%;
+}
+
+#hits .ais-Hits-list .hit .infos {
+  height: 90px;
+  padding: 16px 20px;
+}
+
+#hits .ais-Hits-list .hit .infos h4 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#hits .ais-Hits-list .hit .infos p {
+  color: #949697;
+  font-size: .8em;
+}
+
+#hits .ais-Hits-list .hit .infos em {
+  color: #ff585b;
+  font-style: normal;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination .ais-Pagination-list {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#pagination .ais-Pagination-item {
+  margin: 1px;
+  padding: 3px;
+  display: inline-block;
+}
+
+#pagination .ais-Pagination-link {
+  color: #ff585b;
+  background: none;
+  border-radius: 4px;
+}
+
+#pagination .pagination > .active > a, #pagination .pagination > li > a:focus, #pagination .pagination > li > a:hover, #pagination .pagination > li > span:focus, #pagination .pagination > li > span:hover {
+  color: #fff;
+  background: #ff585b;
+  border-color: #ff585b;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: .8em;
+}
+
+.thank-you a {
+  color: #ff585b;
+}
+
+.my-custom-marker {
+  background-color: #fff;
+  border: 1px solid #0003;
+  padding: 6px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 2px 4px #00000026;
+}
+
+.my-custom-marker:hover, .my-custom-marker--active {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3369e7;
+}
+
+.my-custom-marker:after {
+  content: "";
+  background-color: #fff;
+  border: 1px solid #0003;
+  border-width: 0 1px 1px 0;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: rotate(45deg);
+}
+
+.my-custom-marker:hover:after, .my-custom-marker--active:after {
+  background-color: #3369e7;
+}
+
+.ais-RefinementList {
+  color: #3a4570;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.ais-RefinementList-item {
+  color: #3a4570;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+  display: block;
+}
+
+.ais-RefinementList-label {
+  color: #3a4570;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.ais-RefinementList-count {
+  box-sizing: border-box;
+  color: #3a4570;
+  background-color: #dfe2ee;
+  border-radius: 8px;
+  padding: .1rem .4rem;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.city {
+  height: 105px;
+}
+
+.ais-Breadcrumb-list, .ais-Carousel-list, .ais-CurrentRefinements-list, .ais-HierarchicalMenu-list, .ais-Hits-list, .ais-FrequentlyBoughtTogether-list, .ais-LookingSimilar-list, .ais-RelatedProducts-list, .ais-TrendingItems-list, .ais-Results-list, .ais-InfiniteHits-list, .ais-InfiniteResults-list, .ais-Menu-list, .ais-NumericMenu-list, .ais-Pagination-list, .ais-RatingMenu-list, .ais-RefinementList-list, .ais-ToggleRefinement-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ais-Carousel-navigation, .ais-ClearRefinements-button, .ais-CurrentRefinements-delete, .ais-CurrentRefinements-reset, .ais-GeoSearch-redo, .ais-GeoSearch-reset, .ais-HierarchicalMenu-showMore, .ais-InfiniteHits-loadPrevious, .ais-InfiniteHits-loadMore, .ais-InfiniteResults-loadMore, .ais-Menu-showMore, .ais-RangeInput-submit, .ais-RefinementList-showMore, .ais-SearchBox-submit, .ais-SearchBox-reset, .ais-VoiceSearch-button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  line-height: normal;
+  overflow: visible;
+}
+
+.ais-Carousel-navigation::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-ClearRefinements-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-CurrentRefinements-delete::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-CurrentRefinements-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-GeoSearch-redo::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-GeoSearch-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-HierarchicalMenu-showMore::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-InfiniteHits-loadPrevious::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-InfiniteHits-loadMore::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-InfiniteResults-loadMore::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-Menu-showMore::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-RangeInput-submit::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-RefinementList-showMore::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-SearchBox-submit::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-SearchBox-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-VoiceSearch-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.ais-Carousel-navigation[disabled], .ais-ClearRefinements-button[disabled], .ais-CurrentRefinements-delete[disabled], .ais-CurrentRefinements-reset[disabled], .ais-GeoSearch-redo[disabled], .ais-GeoSearch-reset[disabled], .ais-HierarchicalMenu-showMore[disabled], .ais-InfiniteHits-loadPrevious[disabled], .ais-InfiniteHits-loadMore[disabled], .ais-InfiniteResults-loadMore[disabled], .ais-Menu-showMore[disabled], .ais-RangeInput-submit[disabled], .ais-RefinementList-showMore[disabled], .ais-SearchBox-submit[disabled], .ais-SearchBox-reset[disabled], .ais-VoiceSearch-button[disabled] {
+  cursor: default;
+}
+
+.ais-InfiniteHits-loadPrevious, .ais-InfiniteHits-loadMore, .ais-HierarchicalMenu-showMore, .ais-Menu-showMore, .ais-RefinementList-showMore {
+  overflow-anchor: none;
+}
+
+.ais-Breadcrumb-list, .ais-Breadcrumb-item, .ais-Pagination-list, .ais-RangeInput-form, .ais-RatingMenu-link, .ais-PoweredBy {
+  align-items: center;
+  display: flex;
+}
+
+.ais-GeoSearch, .ais-GeoSearch-map {
+  height: 100%;
+}
+
+.ais-HierarchicalMenu-list .ais-HierarchicalMenu-list {
+  margin-left: 1em;
+}
+
+.ais-PoweredBy-logo {
+  width: auto;
+  height: 1.2em;
+  display: block;
+}
+
+.ais-PoweredBy-text {
+  margin-right: .3rem;
+}
+
+.ais-RatingMenu-starIcon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.ais-SearchBox-input::-ms-clear {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.ais-SearchBox-input::-ms-reveal {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.ais-SearchBox-input::-webkit-search-decoration {
+  display: none;
+}
+
+.ais-SearchBox-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.ais-SearchBox-input::-webkit-search-results-button {
+  display: none;
+}
+
+.ais-SearchBox-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.ais-RangeSlider .rheostat {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: visible;
+}
+
+.ais-RangeSlider .rheostat-background {
+  width: 100%;
+  height: 6px;
+  top: 0;
+}
+
+.ais-RangeSlider .rheostat-handle {
+  margin-left: -12px;
+  top: -7px;
+}
+
+.ais-RangeSlider .rheostat-background {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  position: relative;
+}
+
+.ais-RangeSlider .rheostat-progress {
+  background-color: #333;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+}
+
+.rheostat-handle {
+  z-index: 1;
+  cursor: grab;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.rheostat-marker {
+  background-color: #aaa;
+  width: 1px;
+  height: 5px;
+  margin-left: -1px;
+  position: absolute;
+}
+
+.rheostat-marker--large {
+  height: 9px;
+}
+
+.rheostat-value {
+  text-align: center;
+  margin-left: 50%;
+  padding-top: 15px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.rheostat-tooltip {
+  text-align: center;
+  margin-left: 50%;
+  position: absolute;
+  top: -22px;
+  transform: translateX(-50%);
+}
+
+.ais-Carousel {
+  position: relative;
+}
+
+.ais-Carousel-list {
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  grid-auto-columns: 42%;
+  grid-auto-flow: column;
+  display: grid;
+  overflow-x: auto;
+}
+
+@media (width >= 999px) {
+  .ais-Carousel-list {
+    grid-auto-columns: 20%;
+  }
+}
+
+.ais-Carousel-navigation {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+}
+
+.ais-Carousel-navigation--previous {
+  left: 0;
+  transform: translateX(-25%);
+}
+
+.ais-Carousel-navigation--next {
+  right: 0;
+  transform: translateX(25%);
+}
+
+.ais-Carousel-item {
+  scroll-snap-align: start;
+}
+
+/*# sourceMappingURL=index.e5980c4e.css.map */
